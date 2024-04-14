@@ -5,27 +5,38 @@
 
 package javaassignment3;
 
-
 import java.util.Scanner;
 
 public class ShoppingCart {
-	class Prod {
-		public static void main(String args[]) {
-			Scanner sc = new Scanner(System.in);
-			float rate, amount, dis, disamount;
-			int n;
-			String name;
-			System.out.println("Enter Product Name,Rate and Quantity");
-			name = sc.next();
-			rate = sc.nextFloat();
-			n = sc.nextInt();
-			amount = rate * n;
-			dis = (amount * 10) / 100;
-			disamount = amount - dis;
-			System.out.println("Amount= " + amount);
-			System.out.println("Discount= " + dis);
-			System.out.println("Final Amount= " + disamount);
+	private Product[] products;
+	private int productCount;
+
+	public ShoppingCart() {
+		products = new Product[10]; // Assuming a maximum of 10 products for simplicity
+		productCount = 0;
+	}
+
+	public void addProduct(Product product) {
+		if (productCount < products.length) {
+			products[productCount] = product;
+			productCount++;
+		} else {
+			System.out.println("Cart is full. Cannot add more products.");
 		}
 	}
 
+	public double calculateTotalCost() {
+		double totalCost = 0;
+		for (int i = 0; i < productCount; i++) {
+			totalCost += products[i].getPrice();
+		}
+		return totalCost;
+	}
+
+	public void displayCartContents() {
+		System.out.println("Shopping Cart Contents:");
+		for (int i = 0; i < productCount; i++) {
+			System.out.println(products[i].getName() + " - $" + products[i].getPrice());
+		}
+	}
 }

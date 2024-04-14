@@ -1,6 +1,6 @@
-// 8. Create classes to represent a Library and Book. The Library class should contain
-// an Array of Book objects. Implement methods to add, remove, and display books
-// in the library.
+//8. Create classes to represent a Library and Book. The Library class should contain
+//an Array of Book objects. Implement methods to add, remove, and display books
+//in the library.
 
 package javaassignment3;
 
@@ -67,7 +67,7 @@ class Library {
 	}
 }
 
-public class Library1 {
+public class Library01 {
 	public static void main(String[] args) {
 		Library library = new Library();
 

@@ -1,3 +1,16 @@
+//4. Create a class called &#39;Matrix&#39; containing constructor that initializes the number
+//of rows and number of columns of a new Matrix object. The Matrix class has the
+//following information:
+//a. number of rows of matrix
+//b. number of columns of matrix
+//c. elements of matrix in the form of 2D array
+//The Matrix class has methods for each of the following:
+//a. get the number of rows
+//b. get the number of columns
+//c. set the elements of the matrix at given position (i,j)
+//d. adding two matrices. If the matrices are not addable, &quot;Matrices cannot be
+//added&quot; will be displayed.
+
 package javaassignment3;
 
 public class Matrix {

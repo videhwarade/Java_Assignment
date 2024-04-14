@@ -1,3 +1,8 @@
+//2.Print the sum, difference and product of two complex numbers by creating a
+//class, named &#39;Complex&#39; with separate methods for each operation whose real and
+//imaginary parts are entered by user. Use Constructors to initialize the data
+//members
+
 package javaassignment3;
 
 public class Complex {

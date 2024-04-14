@@ -1,4 +1,8 @@
-package javaassignment3; // Que 5
+//5.Write a class Time with three data members to store hr, min and seconds.
+//Create two constructors and apply checks to set valid time. (hr&lt;24, min&lt;60,
+//sec&lt;60). Also create display function which displays all data members.
+
+package javaassignment3;
 
 public class Time {
 	private int hour;
